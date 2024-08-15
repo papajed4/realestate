@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <style>
+    .tools ul {
+      list-style-type: none;
+    }
+
+    .tools ul li {
+      padding: 6px;
+    }
+
+    /* .sidebar {
+      background-color: rgba(0, 3, 3, 0.644);
+    } */
+
+    @media(max-width:1000px) {
+      .sidebar {
+        width: 100%;
+        display: none;
+      }
+
+      .otherside {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-white">
+    <div class="container-fluid">
+
+      <a class="navbar-brand align-items-end" href="index.html"><img src="logogo.jpg" alt="" class="img-fluid"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-md-none ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="icons8-administrator-male-24.png" alt=""> Profile
+            </a>
+            <ul class="dropdown-menu bg-body-tertiary">
+              <li><a class="dropdown-item" href="#">Edit profile</a></li>
+              <li><a class="dropdown-item" href="#">2FA</a></li>
+              <li><a class="dropdown-item" href="#">Report an issue</a></li>
+            </ul>
+          </li>
+          <a class="nav-link" href="#">Dashboard</a>
+          <a class="nav-link" href="#">Status</a>
+          <a class="nav-link" href="#">Post</a>
+        </div>
+      </div>
+      <div class="dropdown dropend d-none d-lg-inline">
+        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="icons8-user-30.png" alt="" class="align-items-center justify-content-center">
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-start align-items-center justify-content-center" style="float: left;">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row ">
+      <div class="col-lg-2 col-sm-12 sidebar bg-body-tertiary">
+        <h3 class="sidenav-head text-dark text-center">Tools</h3>
+        <div>
+
+          <div class="tools">
+            <ul>
+              <li><img src="icons8-administrator-male-24.png" alt=""> Profile</li>
+              <li>Dashboard</li>
+              <li>Status</li>
+              <li>Posts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10 col-sm-12 otherside">
+        <section class="container">
+
+          <div class="container">
+            <h3>Dashboard</h3>
+            <div class="row " id="">
+              <div class="card col-sm-12 col-lg-4 ">
+
+                <div class="card-body">
+                  <h4 class="card-title">Membership Progress</h4>
+                  <h5 class="card-text">$75,300</h5>
+                  <h6><span class="badge text-bg-success">+9.0%</span> SInce last month</h6>
+                </div>
+              </div>
+
+              <div class="card col-sm-12 col-lg-4">
+                <div class="card-body">
+                  <h4 class="card-title">Membership Progress</h4>
+                  <h5 class="card-text">$75,300</h5>
+                  <h6><span class="badge text-bg-success">+9.0%</span> SInce last month</h6>
+                </div>
+              </div>
+
+              <div class="card col-sm-12 col-lg-4">
+                <div class="card-body">
+                  <h4 class="card-title">Membership Progress</h4>
+                  <h5 class="card-text">$75,300</h5>
+                  <h6><span class="badge text-bg-success">+9.0%</span> SInce last month</h6>
+                </div>
+              </div>
+
+            </div>
+            <div class="container">
+              <h3>Average Earnings</h3>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+<!-- <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script> -->
+
+</html>
